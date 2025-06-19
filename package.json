@@ -1,5 +1,5 @@
 {
-  "name": "netlify-react-router-template",
+  "name": "incguide",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,24 +9,27 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/node": "^7.5.2",
-    "@react-router/serve": "^7.5.2",
-    "isbot": "^5.1.27",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router": "^7.5.2"
+    "@react-router/fs-routes": "^7.6.2",
+    "@react-router/node": "^7.6.2",
+    "@react-router/serve": "^7.6.2",
+    "@tailwindcss/vite": "^4.1.10",
+    "isbot": "^5.1.28",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.2"
   },
   "devDependencies": {
+    "@mdx-js/rollup": "^3.1.0",
     "@netlify/vite-plugin-react-router": "^1.0.1",
-    "@react-router/dev": "^7.5.2",
-    "@types/node": "^20.17.32",
-    "@types/react": "^18.3.20",
-    "@types/react-dom": "^18.3.6",
+    "@react-router/dev": "^7.6.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20.19.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3",
-    "vite": "^6.3.3",
+    "vite": "^6.3.5",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
