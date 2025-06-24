@@ -1,2 +1,36 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+/* @keyframes grow-x { */
+/*   from { */
+/*     transform: scaleX(0); */
+/*   } */
+/*   to { */
+/*     transform: scaleX(1); */
+/*   } */
+/* } */
+
+/* @keyframes shrink-x { */
+/*   from { */
+/*     transform: scaleX(1); */
+/*   } */
+/*   to { */
+/*     transform: scaleX(0); */
+/*   } */
+/* } */
+
+/* .toc a.active li { */
+/*   color: var(--color-pink-700); */
+/* } */
+
+/* .toc a.transitioning li { */
+/*   view-transition-name: toc-item; */
+/* } */
+
+/* ::view-transition-new(toc-item){ */
+/*   animation: 0.5s linear both shrink-x; */
+/* } */
+
+/* ::view-transition-old(toc-item){ */
+/*   animation: 0.5s linear both grow-x; */
+/* } */

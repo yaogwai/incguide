@@ -4,7 +4,8 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import netlifyPlugin from "@netlify/vite-plugin-react-router";
 import mdx from '@mdx-js/rollup'
+import remarkGfm from 'remark-gfm'
 
 export default defineConfig({
-  plugins: [mdx(), reactRouter(), tsconfigPaths(), tailwindcss(), netlifyPlugin()],
+  plugins: [mdx({ remarkPlugins: [remarkGfm] }), reactRouter(), tsconfigPaths(), tailwindcss(), netlifyPlugin()],
 });
