@@ -5,10 +5,16 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  type HeadersFunction
 } from "react-router";
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
+
+// https://developers.netlify.com/guides/how-to-do-isr-and-advanced-caching-with-remix/
+export const headers: HeadersFunction = () => ({
+  'Cache-Control': 'public, max-age=300, s-maxage=3600, stale-while-revalidate=31536000'
+})
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
