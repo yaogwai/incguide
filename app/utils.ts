@@ -1,9 +1,16 @@
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
 export const PAGES = [
   ['引言', '/intro'],
   ['注册美国公司', '/incorporation'],
   ['收款', '/stripe'],
   ['税务', '/taxes']
 ]
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export function getPageIndex(pathname: string): number {
   return PAGES.findIndex(([_title, path]) => path === pathname);

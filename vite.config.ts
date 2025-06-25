@@ -5,7 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import netlifyPlugin from "@netlify/vite-plugin-react-router";
 import mdx from '@mdx-js/rollup'
 import remarkGfm from 'remark-gfm'
+import { remarkAlert } from 'remark-github-blockquote-alert'
 
 export default defineConfig({
-  plugins: [mdx({ remarkPlugins: [remarkGfm] }), reactRouter(), tsconfigPaths(), tailwindcss(), netlifyPlugin()],
+  plugins: [mdx({ remarkPlugins: [remarkGfm, remarkAlert] }), reactRouter(), tsconfigPaths(), tailwindcss(), netlifyPlugin()],
 });

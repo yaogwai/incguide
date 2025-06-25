@@ -3,7 +3,7 @@ import { Link, useMatches } from "react-router"
 import { getNextPage, getPrevPage } from "~/utils"
 
 function Nav({ page, children }: { page: string[], children: React.ReactNode }) {
-  return <Link to={page[1]} className="relative cursor-pointer py-4 px-6 bg-white rounded-md border border-stone-200 hover:border-stone-300 shadow-xs flex justify-start last:flex-row-reverse">
+  return <Link to={page[1]} className="relative cursor-pointer py-4 px-6 bg-white rounded-md border border-stone-200 hover:border-amber-700 shadow-xs flex justify-start last:flex-row-reverse">
     {children}
   </Link>
 }
